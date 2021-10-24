@@ -10,7 +10,7 @@ Particularities:
 
 -   If you really need to write a comment, write it with good spelling, without typos and always start them like: `// Note: `.
 
--   Again, as Clean Code explains, avoid _Hungarian notation_ as use names like `Map<Id, Account> accountsById` instead of `Map<Id, Account> accountsMap` or `Map<Id, Account> mapAccountsById`, since they are more descriptive and today's environments helps you not to have to mangle the names.
+-   Again, as Clean Code explains, avoid [Hungarian notation](https://en.wikipedia.org/wiki/Hungarian_notation) and use names like `Map<Id, Account> accountsById` instead of `Map<Id, Account> accountsMap` or `Map<Id, Account> mapAccountsById`, since they are more descriptive and today's environments helps you not to have to mangle the names.
 
 -   Only use `_` in names when they are constants (top level class final static variables). If so, write them with all uppercase letters.
 
@@ -36,15 +36,15 @@ Particularities:
 
 -   Try to move your functional methods to a `utils.js` file and you imports for SObjects, fields, and labels to a `schema.js` file in you lightning web components.
 
--   When communicating with other components, leverage public (`@api`) methods/properties from parents, `dispatchEvent` from children, and lightning message channels from siblings, when they do not belong to the same parent. Use `pubsub` only when lightning message channels do not cover your use case.
+-   When communicating with other components, leverage public (`@api`) methods/properties from parents, `dispatchEvent` from children, and lightning message channels from siblings, when they do not have a common ancestor. Use `pubsub` only when lightning message channels do not cover your use case. Use [this link](https://developer.salesforce.com/blogs/2021/05/inter-component-communication-patterns-for-lightning-web-components) for reference.
 
 -   Preference order for styling:
 
-    1. Component attributes (such as `padding` in `lightning-layout-item`).
+    1. Component attributes, such as `padding` in `lightning-layout-item`.
     2. Standard slds classes.
-    3. Custom classes created in the `.css` file, ideally using design tokens.
-    4. Inline css with the `<style>` attribute. If you need standard components to infer styling, leverage styling hooks before using an static resource or dynamically inserting an `style` tag scoping Salesforce inner CSS classes.
+    3. Custom classes created in the `.css` file, ideally using [design tokens](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.create_components_css_design_tokens).
+    4. Inline css with the `<style>` attribute. If you need standard components to infer styling, leverage [styling hooks](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.create_components_css_custom_properties) before using an static resource or dynamically inserting an `style` tag scoping Salesforce inner CSS classes. Use [this link](https://salesforce.stackexchange.com/questions/246887/target-inner-elements-of-standard-lightning-web-components-with-css) for reference.
 
--   When sharing CSS or Javascript code, service components are prefered over static resource.
+-   When sharing [CSS](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.create_components_css_share) or [Javascript](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.js_share_code) code, service components are prefered over static resource.
 
 -   When naming CSS classes, use hyphen delimited strings, for example: `.red-box`.
