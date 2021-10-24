@@ -14,7 +14,7 @@ Particularities:
 
 -   Only use `_` in names when they are constants (top level class final static variables). If so, write them with all uppercase letters.
 
--   Naming conventions for differents Apex classes are explained in the correspondan README.md files in the [sfdx-nakama-project-scaffolding](https://github.com/Nakama-Partnering-Services/sfdx-nakama-project-scaffolding) repository.
+-   Naming conventions for differents Apex classes are explained in the correspondant README.md files in the [sfdx-nakama-project-scaffolding](https://github.com/Nakama-Partnering-Services/sfdx-nakama-project-scaffolding) repository.
 
 ## Apex specific
 
@@ -24,7 +24,7 @@ Particularities:
 
 -   Do not clutter your code with methods such as `Database.insert` when just `insert` is enough.
 
--   Name your test methods like `successOnInsertAccounts` and `failsOnInsertAccountsWhitoutPermissions`, rather than `GivenTheUserHasEnoughPermissionsWhenInsertingAccountsThenAccountsAreInserterSuccessfully` or `test_insertAccounts`.
+-   Name your test methods like `successOnInsertAccounts` and `failsOnInsertAccountsWithoutPermissions`, rather than `GivenTheUserHasEnoughPermissionsWhenInsertingAccountsThenAccountsAreInserterSuccessfully` or `test_insertAccounts`.
 
 ## LWC specific
 
@@ -32,17 +32,18 @@ Particularities:
 
 -   When variables are only going to be used in the `.js` controller file, start them with underscore `_`, for example: `_accountId`.
 
--   You will not need `@track` annotation almost never.
+-   You will not need `@track` annotation almost ever.
 
 -   Try to move your functional methods to a `utils.js` file and you imports for SObjects, fields, and labels to a `schema.js` file in you lightning web components.
 
--   When communicating with other components, leverage public (`@api`) methods/properties from parents, `dispatchEvent` from children, and lightning message channels from siblings, when they do not belong to the same parent. Use `pubsub` only when lightning message channels do not cover you use case.
+-   When communicating with other components, leverage public (`@api`) methods/properties from parents, `dispatchEvent` from children, and lightning message channels from siblings, when they do not belong to the same parent. Use `pubsub` only when lightning message channels do not cover your use case.
 
 -   Preference order for styling:
 
-    1. Component attribute (such as `padding` in `lightning-layout-item`).
-    2. slds standard classes > custom classes created in the `.css` file, ideally using design tokens.
-    3. inline css with the `<style>` attribute. If you need standard components to infer styling, leverage styling hooks before using an static resource or dynamically inserting an `style` tag scoping Salesforce inner CSS classes.
+    1. Component attributes (such as `padding` in `lightning-layout-item`).
+    2. Standard slds classes.
+    3. Custom classes created in the `.css` file, ideally using design tokens.
+    4. Inline css with the `<style>` attribute. If you need standard components to infer styling, leverage styling hooks before using an static resource or dynamically inserting an `style` tag scoping Salesforce inner CSS classes.
 
 -   When sharing CSS or Javascript code, service components are prefered over static resource.
 
