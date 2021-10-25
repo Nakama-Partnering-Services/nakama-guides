@@ -1,10 +1,10 @@
-# GUIDELINES
+# best-practices
 
 Generally, most of our coding guidelines are based on Clean Code, by Bob Martin. Use [this link](https://moderatemisbehaviour.github.io/clean-code-smells-and-heuristics/) for reference. It is not expected you to know all the rules, just to get familiar with the concept. We improve everyday the code we write, so do not worry if you receive many comments in your first pull requests, you will receive less each time, and you will be able to help others doing reviews yourself once you get familiar with the guidelines.
 
 Particularities:
 
--   Formatting rules are enforced by prettier.
+-   Formatting rules are enforced by [prettier](./PRETTIER.md).
 
 -   In the same way that we try to use `const` whenever possible in Javascript, ideally we will write `final` in Apex (Welcome to the team final!). This way, although it clutters the code a bit and decreases readability, it helps the reader to understand that the variable value or reference is not going to be changed later, improving the understanding of the code.
 
@@ -14,7 +14,9 @@ Particularities:
 
 -   Only use `_` in names when they are constants (top level class final static variables). If so, write them with all uppercase letters.
 
--   Naming conventions for differents Apex classes are explained in the correspondant README.md files in the [sfdx-nakama-project-scaffolding](https://github.com/Nakama-Partnering-Services/sfdx-nakama-project-scaffolding) repository.
+-   Previous rule also applies when creating things such as Custom Labels, Custom Objects or Custom Fields, for example: `NumberOfRelatedContacts__c`.
+
+-   Naming conventions for differents Apex classes are explained in the correspondant README.md files in the [project-scaffolding](https://github.com/Nakama-Partnering-Services/project-scaffolding) repository.
 
 ## Apex specific
 
