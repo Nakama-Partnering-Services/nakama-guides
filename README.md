@@ -1,3 +1,3 @@
-# sfdx-nakama-best-practices
+# guides
 
-This repository aims to contain the guidelines and examples of our opinionated best practices in sfdx projects.
+This repository aims to contain different useful guides for topics such as best practices or onboarding setup.
