@@ -1,6 +1,6 @@
 # best-practices
 
-Generally, most of our coding guidelines are based on Clean Code, by Bob Martin. Use [this link](https://moderatemisbehaviour.github.io/clean-code-smells-and-heuristics/) for reference. It is not expected you to know all the rules, just to get familiar with the concept. We improve everyday the code we write, so do not worry if you receive many comments in your first pull requests, you will receive less each time, and you will be able to help others doing reviews yourself once you get familiar with the guidelines.
+Generally, most of our coding guidelines are based on Clean Code, by Bob Martin. Use [this link](https://moderatemisbehaviour.github.io/clean-code-smells-and-heuristics/) for reference. You can also refer [here](https://github.com/ryanmcdermott/clean-code-javascript) particularly for Javascript. It is not expected you to know all the rules, just to get familiar with the concept. We improve everyday the code we write, so do not worry if you receive many comments in your first pull requests, you will receive less each time, and you will be able to help others doing reviews yourself once you get familiar with the guidelines.
 
 Particularities:
 
