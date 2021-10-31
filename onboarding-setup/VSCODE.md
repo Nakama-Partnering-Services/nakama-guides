@@ -12,3 +12,6 @@ This are the relevant settings that we use for Visual Studio Code in remote (doc
 - "prettier.printWidth": 120,
 - "prettier.tabWidth": 4,
 - "prettier.useTabs": true
+- "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
+  }

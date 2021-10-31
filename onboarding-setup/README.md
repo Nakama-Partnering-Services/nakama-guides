@@ -26,10 +26,16 @@ Plugins:
     -   VSCode extensions will be there in the Salesforce Image provided by us
     -   In case you are using Salesforce default docker image, our one is exactly that one but including:
 
-        -   Salesforce Extension Pack, plus: + Apex Log Analyzer + ESLint + Apex PMD + Prettier + XML
-            OR
-        -   Salesforce Extension Pack (Expanded), plus:
+        -   Salesforce Extension Pack, plus: 
+            -   Apex Log Analyzer 
+            -   ESLint 
+            -   Apex PMD  
+            -   Prettier 
+            -   XML
 
+            OR
+
+        -   Salesforce Extension Pack (Expanded), plus:
             -   SOQL
 
         -   Git Graph
@@ -38,6 +44,7 @@ Plugins:
         -   Salesforce Package.xml Generator
         -   Tabnine
         -   Trailing Spaces
+        -   XML Tools
 
     Either docker image, already contains salesforce cli, java (with /usr/lib/jvm/java-11-openjdk-amd64 specified in remote settings), node and git.
 
