@@ -86,7 +86,7 @@ Plugins:
 ## NPM
 
 -   $ npm set unsafe-perm true (this is needed in docker to install husky without issues)
--   $ npm install
+-   $ npm ci
 
 If you face problems with the previous command due to `No matching version found for prettier-plugin-apex@^1.10.1`, update your `package.json` file and set it to `prettier-plugin-apex@^1.10.0` instead.
 
