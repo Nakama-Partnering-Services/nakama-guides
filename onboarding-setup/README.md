@@ -48,7 +48,13 @@ Plugins:
 
     Either docker image, already contains salesforce cli, java (with /usr/lib/jvm/java-11-openjdk-amd64 specified in remote settings), node and git.
 
-    We also recommend these extensions, which can only be installed locally, but not in Dev Container: - Auto Close Tag - Auto Rename Tag - Bracket Pair Colorizer 2 - Codey Midnight (or your favourite VSCode theme) - Peacock (to easily identify different projects open in separate VSCode windows) - VSCode icons
+    We also recommend these extensions, which can only be installed locally, but not in Dev Container: 
+    -   Auto Close Tag 
+    -   Auto Rename Tag 
+    -   Bracket Pair Colorizer 2 
+    -   Codey Midnight (or your favourite VSCode theme)
+    -   Peacock (to easily identify different projects open in separate VSCode windows) 
+    -   VSCode icons
 
 ## Git
 
