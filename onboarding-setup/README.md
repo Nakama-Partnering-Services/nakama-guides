@@ -64,15 +64,15 @@ Plugins:
             -   Leave _Title_ empty, paste ALL content in _Key_ section
             -   Add SSH key
 
-    -   Go to the repository > code > SSH > copy git@github.com:jdkgabri/project-scaffolding.git
+    -   Go to the repository > code > SSH > copy git@github.com:Nakama-Partnering-Services/project-scaffolding.git
 
     -   Go to the terminal again in your local machine:
-        -   $ git clone git@github.com:jdkgabri/project-scaffolding.git
+        -   $ git clone git@github.com:Nakama-Partnering-Services/project-scaffolding.git
 
             If you find an issue `Host key verification failed. fatal: Could not read from remote repository` in the previous step, follow these steps: 
         
         - $ ssh -T git@github.com (yes) 
-        - $ git clone git@github.com:jdkgabri/project-scaffolding.git
+        - $ git clone git@github.com:Nakama-Partnering-Services/project-scaffolding.git
 
 -   Setup your user local config:
     -   $ git config --global init.defaultBranch main
