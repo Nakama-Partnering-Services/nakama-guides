@@ -82,6 +82,7 @@ Plugins:
     -   $ git config --global core.autocrlf input (ONLY if you are in a Unix OS, to format files on committing with LF, as Linux and OSX does, instead of doing it with CRLF, as Windows does)
     -   $ git config --global core.autocrlf true (ONLY if you are in a Unix OS, to format files on committing with LF, as Linux and OSX does, instead of doing it with CRLF, as Windows does)
     -   $ git config --global pull.rebase true (to rebase your local branch when pulling changes from remote)
+    -   $ git config --system core.longpaths true (ONLY needed if you are in Windows)
 
 -   Note: when a pull request is approved, use squash and merge to combine all your pull request’s commits into one and retain a clean history.
 
