@@ -1,14 +1,5 @@
 # onboarding-setup
 
-## OS
-
--   Download Ubuntu from official page
--   Download Rufus
--   Add Ubuntu ISO image to an USB
--   Boot Bios of PC from USB to install Ubuntu
--   Install latest LTS version of Ubuntu, minimal installation
--   Once installed, if keyboard does not work for typing your password, restart
-
 ## Mozilla firefox
 
 Plugins:
@@ -87,7 +78,11 @@ Plugins:
     -   $ git config --global user.email "Your email address”
     -   $ git config --global user.name "Your name”
     -   $ git config --global core.editor code
-    -   $ git config --global core.autocrlf input (to format files on committing with LF, as Linux and OSX does, instead of doing it with CRLF, as windows dows)
+    -   $ git config --global core.autocrlf input (ONLY if you are in a Unix OS, to format files on committing with LF, as Linux and OSX does, instead of doing it with CRLF, as Windows does)
+    -   $ git config --global core.autocrlf true (ONLY if you are in a Unix OS, to format files on committing with LF, as Linux and OSX does, instead of doing it with CRLF, as Windows does)
+    -   $ git config --global pull.rebase true (to rebase your local branch when pulling changes from remote)
+
+-   Note: when a pull request is approved, use squash and merge to combine all your pull request’s commits into one and retain a clean history.
 
 ## NPM
 
