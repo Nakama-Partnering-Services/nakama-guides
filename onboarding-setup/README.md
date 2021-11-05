@@ -75,6 +75,7 @@ Plugins:
         - $ git clone git@github.com:jdkgabri/project-scaffolding.git
 
 -   Setup your user local config:
+    -   $ git config --global init.defaultBranch main
     -   $ git config --global user.email "Your email address”
     -   $ git config --global user.name "Your name”
     -   $ git config --global core.editor code
