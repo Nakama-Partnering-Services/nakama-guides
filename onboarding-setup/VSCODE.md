@@ -1,4 +1,4 @@
-This are the relevant settings that we use for Visual Studio Code in remote (docker image) and [workspace](https://github.com/Nakama-Partnering-Services/project-scaffolding/blob/main/.vscode/settings.json) (repository):
+This are the relevant settings that we use for Visual Studio Code in our [workspace](https://github.com/Nakama-Partnering-Services/project-scaffolding/blob/main/.vscode/settings.json) (repository):
 
 - "salesforcedx-vscode-apex.java.home": "C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.13.8-hotspot"
 - "salesforcedx-vscode-core.detectConflictsAtSync": true
