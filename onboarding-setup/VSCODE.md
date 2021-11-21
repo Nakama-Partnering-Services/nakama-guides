@@ -1,20 +1,26 @@
-This are the relevant settings that we use for Visual Studio Code in our [workspace](https://github.com/Nakama-Partnering-Services/project-scaffolding/blob/main/.vscode/settings.json) (repository):
+These are the relevant settings that we use for Visual Studio Code in our [workspace](https://github.com/Nakama-Partnering-Services/project-scaffolding/blob/main/.vscode/settings.json):
 
-- "salesforcedx-vscode-apex.java.home": "C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.13.8-hotspot"
-- "salesforcedx-vscode-core.detectConflictsAtSync": true
-- "salesforcedx-vscode-core.retrieve-test-code-coverage": true
--	"trailing-spaces.trimOnSave": true
-- “files.trimTrailingWhitespace": true
-- "diffEditor.ignoreTrimWhitespace": false
-- "editor.insertSpaces": false
-- "editor.detectIndentation": false
-- "editor.renderWhitespace": "all"
-	"editor.defaultFormatter": "esbenp.prettier-vscode"
-- "prettier.trailingComma": "none"
-- "prettier.singleQuote": true
-- "prettier.printWidth": 120
-- "prettier.tabWidth": 4
-- "prettier.useTabs": true
-- "[xml]": {
-    "editor.defaultFormatter": "DotJoshJohnson.xml"
-  }
+    "search.exclude": {
+    	"**/node_modules": true,
+    	"**/bower_components": true,
+    	"**/.sfdx": true
+    },
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "salesforcedx-vscode-apex.java.home": "C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.13.8-hotspot",
+    "salesforcedx-vscode-core.detectConflictsAtSync": true,
+    "salesforcedx-vscode-core.retrieve-test-code-coverage": true,
+    "trailing-spaces.trimOnSave": true,
+    "files.trimTrailingWhitespace": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.insertSpaces": false,
+    "editor.detectIndentation": false,
+    "editor.renderWhitespace": "all",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.trailingComma": "none",
+    "prettier.singleQuote": true,
+    "prettier.printWidth": 120,
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": true,
+    "[xml]": {
+    	"editor.defaultFormatter": "DotJoshJohnson.xml"
+    }
