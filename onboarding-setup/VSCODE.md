@@ -11,6 +11,8 @@ These are the relevant settings that we use for Visual Studio Code in our [works
     "trailing-spaces.trimOnSave": true,
     "files.trimTrailingWhitespace": true,
     "diffEditor.ignoreTrimWhitespace": false,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs":"active",
     "editor.insertSpaces": false,
     "editor.detectIndentation": false,
     "editor.renderWhitespace": "all",
