@@ -35,7 +35,6 @@ Plugins:
     -   XML Tools
     -   Auto Close Tag
     -   Auto Rename Tag
-    -   Bracket Pair Colorizer 2
     -   Codey Midnight (or your favourite VSCode theme)
     -   Peacock (to easily identify different projects open in separate VSCode windows)
     -   VSCode icons
@@ -74,8 +73,11 @@ Plugins:
     -   $ git config --global core.autocrlf true
     -   $ git config --global pull.rebase true (to rebase your local branch when pulling changes from remote)
     -   $ git config --global core.longpaths true
+    -   $ git config --global fetch.prune true
 
 -   Note: when a pull request is approved, use squash and merge to combine all your pull request’s commits into one and retain a clean history.
+
+-   Note: if you need to perform any changes locally in files such as .vscode/settings.json, use this command to prevent git from tracking it: `git update-index --assume-unchanged .vscode/settings.json`. To revert this configuration, use `git update-index --no-assume-unchanged .vscode/settings.json`.
 
 ## NPM
 
