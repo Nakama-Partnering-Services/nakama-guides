@@ -16,7 +16,7 @@ Particularities:
 
 -   Previous rule also applies when creating things such as Custom Labels, Custom Objects or Custom Fields, which should follow PascalCase naming convention. For example: `NumberOfRelatedContacts__c`. Similarly, when creating Flows, every element should also follow PascalCase naming convention except for variables, which should follow camelCase instead, just like in real code.
 
--   Remember to always add proper descriptions for things such as Labels, Custom Objects, Custom Fields, and Flows (inclugin their elements and variables). 
+-   Remember to always add proper descriptions for things such as Labels, Custom Objects, Custom Fields, and Flows (including their elements and variables). 
 
 -   Naming conventions for differents Apex classes are explained in the correspondant README.md files in the [project-scaffolding](https://github.com/Nakama-Partnering-Services/project-scaffolding) repository.
 
