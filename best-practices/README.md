@@ -14,7 +14,9 @@ Particularities:
 
 -   Only use `_` in names when they are constants (top level class final static variables). If so, write them with all uppercase letters.
 
--   Previous rule also applies when creating things such as Custom Labels, Custom Objects or Custom Fields, for example: `NumberOfRelatedContacts__c`.
+-   Previous rule also applies when creating things such as Custom Labels, Custom Objects or Custom Fields, which should follow PascalCase naming convention. For example: `NumberOfRelatedContacts__c`. Similarly, when creating Flows, every element should also follow PascalCase naming convention except for variables, which should follow camelCase instead, just like in real code.
+
+-   Remember to always add proper descriptions for things such as Labels, Custom Objects, Custom Fields, and Flows (inclugin their elements and variables). 
 
 -   Naming conventions for differents Apex classes are explained in the correspondant README.md files in the [project-scaffolding](https://github.com/Nakama-Partnering-Services/project-scaffolding) repository.
 
