@@ -10,7 +10,7 @@ Plugins:
 
 ## Visual Studio Code
 
--   Follow [these instructions](https://developer.salesforce.com/tools/vscode/en/getting-started/install) to install VSCode, Salesforce CLI, and Java 11
+-   Follow [these instructions](https://developer.salesforce.com/tools/vscode/en/getting-started/install) to install VSCode, Salesforce CLI, and OpenJDK 11
 -   Install sfdx sfpowerkit plugin for scratch org pooling: `sf plugins install sfpowerkit`
 -   Install node latest LTS version
 -   Install these extensions (recomended):
