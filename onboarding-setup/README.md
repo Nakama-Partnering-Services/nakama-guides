@@ -48,7 +48,7 @@ Plugins:
 
         -   Open terminal in your local machine:
 
-            -   $ ssk-keygen > press “enter” 3 times to accept all the defaults
+            -   $ ssh-keygen > press “enter” 3 times to accept all the defaults
             -   $ code /home/{your user}/.ssh/id_rsa.pub > copy ALL file content
 
         -   In your GitHub profile, go to:
