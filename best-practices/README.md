@@ -46,7 +46,7 @@ Generally, most of our coding guidelines are based on Clean Code, by Bob Martin.
 - Test Classes are private, regular class public and you need a very good reason foir making it global. Put a // Note: on top to explain why.
 - Aside form test classes, all classes should have a sharing declaration. Most of classes should usually have `with sharing` declaration except for classes such as Selectors or other classes that are always delegated, who should have `inherithed sharing` to operate under calling class sharing specification. If omitted or `without sharing`, you should write a // Note: on top to explain why.
 - As Apex IDEs don't do that for you (other than Java IDEs) structure your classes using // Constructor // Public // Private // Inner section comments.
-- Test classes just have an optional [// Helper]() section comment for private methods used by multiple tests methods.
+- Test classes just have an optional // Helper section comment for private methods used by multiple tests methods.
 - A class should read like a good newpaper article, where the most important stuff comes at the beginning. Move implementation details to the end. And show the broad algorithm and actors on top. It's definitly not like a book where you need to read to the end to understand it.
 - A method should do ONE thing and reveal that in its name. Complicated names with many CamelCaseHumps show that a method either does too much or you are describing the implementation instead.
 - Methods that return something should alway in Line 1 declare it as `result` and return result in the last line. Always call it `result` it will dramatically increase readability. What it is, is decribed in the method name. 
