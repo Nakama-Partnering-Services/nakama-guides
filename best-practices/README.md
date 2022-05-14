@@ -55,7 +55,7 @@ Generally, most of our coding guidelines are based on Clean Code, by Bob Martin.
 - Always respect Apex best practices when applicable, such as checking user permissions, sharing accessibility, and so on.
 - Do not clutter your code with methods such as `Database.insert` when just `insert` is enough.
 - Name your test methods like `successOnInsertAccounts` and `failsOnInsertAccountsWithoutPermissions`, rather than `GivenTheUserHasEnoughPermissionsWhenInsertingAccountsThenAccountsAreInserterSuccessfully` or `test_insertAccounts`.
-- No matter which trigger-framework (I recommend [this](https://github.com/mitchspano/apex-trigger-actions-framework) you use if there is a central Handler class just call it like the trigger `Students.cls`.
+- No matter which trigger-framework (I recommend [this](https://github.com/mitchspano/apex-trigger-actions-framework)) you use if there is a central Handler class just call it like the trigger `Students.cls`.
 - A Trigger never contain more than a single line of Code. It's the line delegating the work to a class. Triggers use the plural-form of the object they represent and never repeat the word `Trigger`.  So the file is `Students.trigger` and not `StudentTrigger.trigger` or such.
 ```````java
 trigger OpportunityTrigger on Opportunity (
