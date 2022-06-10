@@ -20,7 +20,7 @@ Generally, most of our coding guidelines are based on Clean Code, by Bob Martin.
 - For Custom Labels, Custom Objects and Custom Fields, API Names should always follow PascalCase convention. This indicates that you really took care when providing the API name rather than leaving the default Salesforce name with underscores replacing whitespaces. In the same way, variables in apex should follow camelCase conventions except for contants, which should follow SNAKE_CASE convention. Similarly, when creating Flows, every element should also follow PascalCase naming convention except for variables, which should follow camelCase instead, just like in real code.
 - Avoid [Hungarian notation](https://en.wikipedia.org/wiki/Hungarian_notation) where variable type is encoded in the variable name.
 - Follow [Microsoft Guidelines for abbreviations and acronyms](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-1.1/141e06ef(v=vs.71)?redirectedfrom=MSDN). Avoid abbreviations, use only well known acronyms and always use PascalCase or camelCase for them.
-- Naming conventions for differents Apex classes are explained in the correspondant README.md files in the [project-scaffolding](https://github.com/Nakama-Partnering-Services/project-scaffolding) repository.
+- Naming conventions for differents Apex classes are explained in the correspondant README.md files in the [project-scaffolding](https://github.com/Nakama-Partnering-Services/nakama-project-scaffolding) repository.
 
 - Examples:
   - `RegistrationQueue` is better than `PlatformEventHandler`
