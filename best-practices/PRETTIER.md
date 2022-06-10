@@ -1,4 +1,4 @@
-These are the configurable rules that we follow in our [.prettierrc](https://github.com/Nakama-Partnering-Services/project-scaffolding/blob/main/.prettierrc) file:
+These are the configurable rules that we follow in our [.prettierrc](https://github.com/Nakama-Partnering-Services/nakama-project-scaffolding/blob/main/.prettierrc) file:
 
 -   trailingComma: ‘none’ (Required for Aura)
 
