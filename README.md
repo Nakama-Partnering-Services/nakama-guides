@@ -1,3 +1,3 @@
 # nakama-guides
 
-This repository aims to contain different useful guides for topics such as best practices or onboarding setup.
+Guides for working together, getting things done, programming well, and programming in style.
