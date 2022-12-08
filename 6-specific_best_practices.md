@@ -133,7 +133,7 @@ trigger Opportunities on Opportunity (
   2. Standard slds classes.
   3. Custom classes created in the `.css` file, ideally using [design tokens](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.create_components_css_design_tokens).
   4. Inline css with the `<style>` attribute. If you need standard components to infer styling, leverage [styling hooks](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.create_components_css_custom_properties) before using an static resource or dynamically inserting an `style` tag scoping Salesforce inner CSS classes. Use [this link](https://salesforce.stackexchange.com/questions/246887/target-inner-elements-of-standard-lightning-web-components-with-css) for reference.
-- When sharing [CSS](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.create_components_css_share) or [Javascript](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.js_share_code) code, service components are prefered over static resource.
+- When sharing [CSS](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.create_components_css_share) or [Javascript](https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.js_share_code) code, service components are preferred over static resource.
 - When naming CSS classes, use hyphen delimited strings, for example: `.red-box`.
 
 ### LWC example

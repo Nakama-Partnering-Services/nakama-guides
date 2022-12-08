@@ -29,8 +29,8 @@ git config user.email <email>
 Note: the source branch for your feature/bugfix/hotfix branch should always be the same as the target branch of your PR. In order to know the target branch for your PR changes, follow this criteria:
 
 - For normal development (for the new minor release), create your PR against `main` branch.
-- For changes that should go to PRODUCTION before anything else, that can exist together with changes already in STAGING and will be tested there before PRODUCTION deployment, create your PR against the latest `rc/*` branch. If latest `rc/*` has not been created yet, request it to the responsible repository mantainer.
-- For hotfixes against PRODUCTION that can not exist together with STAGING latest changes, request the responsible repository mantainer to create a new `patch/*` branch out of the latest tag, so you can create your PR against it.
+- For changes that should go to PRODUCTION before anything else, that can exist together with changes already in STAGING and will be tested there before PRODUCTION deployment, create your PR against the latest `rc/*` branch. If latest `rc/*` has not been created yet, request it to the responsible repository maintainer.
+- For hotfixes against PRODUCTION that can not exist together with STAGING latest changes, request the responsible repository maintainer to create a new `patch/*` branch out of the latest tag, so you can create your PR against it.
 
 ### Branch naming conventions
 
@@ -48,9 +48,9 @@ Good branch names are like the following:
 
 [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) + [smart commits](https://support.atlassian.com/jira-software-cloud/docs/process-issues-with-smart-commits/).
 
-Conventional commits are enforced for local commits with a git commit-msg hook. Smart commits should be developer responsability.
+Conventional commits are enforced for local commits with a git commit-msg hook. Smart commits should be developer responsibility.
 
-On PR title upon completion, the same convention should be applied to take advantage of automatic `CHANGELOG.md` generation and Jira Integration. It is developer responsability to ensure that the PR title upon completion if following convention commits + smart commits convetions.
+On PR title upon completion, the same convention should be applied to take advantage of automatic `CHANGELOG.md` generation and Jira Integration. It is developer responsibility to ensure that the PR title upon completion if following convention commits + smart commits conventions.
 
 Examples:
 

@@ -64,13 +64,13 @@ The following checklist should be followed to ensure all development meets our c
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <ruleset
-    name="Pyur ruleset for Salesforce.com Apex"
+    name="Nakama ruleset for Salesforce.com Apex"
     xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
 
     <description>
-        Pyur PMD ruleset
+        Nakama PMD ruleset
     </description>
 
     <!-- STANDARD RULES -->
