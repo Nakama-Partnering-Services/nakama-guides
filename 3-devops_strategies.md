@@ -66,12 +66,34 @@ Examples:
 - Create branch accordingly to naming convention.
 - After your work is done, stage and commit your changes.
 - Then pull from the remote branch you have started to work from (`main` or latest `rc/*` or `patch/*`). Default strategy is rebase.
-- Resolve conflicts, run `git rebase --continue` (repeat as many times as needed for each commit having conflicts) and `git push -f` to your remote branch.
+- If there are any conflicts, resolve them and then run `git rebase --continue` (repeat as many times as needed for each commit having conflicts) and `git push -f` to your remote branch.
 - If your changes contain any new metadata or modification that may break apex tests, such as validation rules, ensure all local tests pass successfully in your development environment.
 - Create pull request, ensure that PR title follows our [Commit message conventions](#commit-message-conventions) and ask for review.
 - If you PR contains changes in Apex classes that are not Test classes, and you are not adding/modifying the correspondent `@IsTest` classes for those as part of your PR, make sure that the PR description specifies the desired test level for the validation deployment like for example `Tests: RunLocalTests`. You can also specifically list the `@IsTest` classes that should be executed to comply with the required coverage checks. Syntax for that should be like: `Tests: RunSpecifiedTests TestClass1,TestClass2`.
 
-### Tagging
+#### Tagging
 
-Rebase into main after deploying to production.
-Tag every patch/release after rebasing into main.
+After deploying to PRODUCTION, tag the patch/release branch and rebase the branch onto `main`. Kindly refer to the [Technical instructions for rebases and Production deployments](#technical-instructions-for-rebases-and-production-deployments).
+
+## Technical instructions for rebases and Production deployments
+
+### Production deployment
+
+1. After deployment succeeds, in VSCode, making sure that you are in the branch that was just deployed to Production, make sure you run `git pull` to be up-to-date.
+2. Run `npm run release:minor` or `npm run release:patch` depending on if the deployment was just a minor release (+0.1.0) or a patch one (+0.0.1), based on [Semantic Versioning](https://semver.org/). This will update current release references in the repository and update the [CHANGELOG.md](./CHANGELOG.md) with the latest content of the [conventional commits](#commit-message-conventions).
+3. Run `git push --follow-tags` to push to remote the branch we deployed with the last commit that was just created as well as the new tag.
+
+### Main update with rebase
+
+MANDATORY AFTER PRODUCTION DEPLOYMENT.
+
+This approach is also the one that needs to be followed every time a `rc/*`or `patch/*` branch gets new changes that we want to get deployed into MOLUAT and lower environments.
+
+1. In VSCode, making sure that you are in the `main` branch, make sure you run `git pull` to be up-to-date.
+2. Create a `backup/main` branch with `git checkout -b backup/main` to save current history and commit ids references in the `main` branch at this point. If `backup/main` branch already exists and can not be deleted since there are still some delta variables pointing to a commit id in there, create a new branch like `backup/main-CurrentDate`. `git checkout -b backup/main`.
+3. Push the new `backup/main` branch to remote: `git push --set-upstream origin backup/main --no-verify`.
+4. Rebase latest `rc/*`or `patch/*` deployed branch into main: `git rebase rc/X.X.X`.
+   6.1. In case of conflicts, solve them (ask for help to corresponding developers if needed if you do not know how to solve them), stage the files and run `git rebase --continue`.
+5. Check with `Git Graph` that new branch history for the `main` branch looks correct, linear, and clear, on top of latest `rc/*`or `patch/*` deployed branch. If so push the new rewritten `main` branch to remote: `git push --force`.
+6. If deployment to TEST and all lower environments has finishes successfully, delete from remote the `backup/main` branch that you just created in the step 2.
+
