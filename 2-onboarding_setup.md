@@ -29,6 +29,7 @@
   - Codey Midnight (or your favourite VSCode theme)
   - Peacock (to easily identify different projects open in separate VSCode windows)
   - Material Icon Theme
+  - Error Lens
 
 ## Git
 
