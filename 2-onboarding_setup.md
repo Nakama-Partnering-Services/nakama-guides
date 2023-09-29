@@ -57,7 +57,7 @@
   - $ git config user.email "Your email address”
   - $ git config user.name "Your name”
   - $ git config core.editor code
-  - $ git config core.autocrlf true (or core.autocrlf inptut if using Linux/UNIX)
+  - $ git config core.autocrlf true (or core.autocrlf input if using Linux/UNIX)
   - $ git config pull.rebase true (to rebase your local branch when pulling changes from remote)
   - $ git config core.longpaths true
   - $ git config fetch.prune true
