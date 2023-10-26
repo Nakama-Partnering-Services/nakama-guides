@@ -25,6 +25,7 @@
   - Trailing Spaces
   - XML Tools
   - Auto Close Tag
+  - Auto Complete Tag
   - Auto Rename Tag
   - Codey Midnight (or your favourite VSCode theme)
   - Peacock (to easily identify different projects open in separate VSCode windows)
@@ -34,6 +35,7 @@
 ## Git
 
 - Install git if not installed already
+- If you have multiple accounts in the same machine, check [this link](https://gist.github.com/rahularity/86da20fe3858e6b311de068201d279e3)
 - Authenticate with SSH key:
   - Open terminal in your local machine:
     - $ ssh-keygen > press “enter” 3 times to accept all the defaults
