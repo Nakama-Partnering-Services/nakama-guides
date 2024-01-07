@@ -78,7 +78,7 @@ To organize apex classes for trigger actions.
 
 Considerations:
 
-- The name of these classes should correspond to the action they execute. E.g.: `CapitalizeNames.cls`.
+- The name of these classes should correspond to the object they act upon plus the action they execute. E.g.: `AccountCapitalizeNames.cls`.
 - These classes should usually be inherited (without) sharing, since trigger context should act regardless of record level access of the current user. The inherited sharing will apply without sharing since it is executed in trigger context.
 
 ## Tests
