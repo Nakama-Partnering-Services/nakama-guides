@@ -15,7 +15,7 @@ Generally, most of our coding guidelines are based on Clean Code, by Bob Martin.
 
 Know and apply all the [recommendations Salesforce has published](https://developer.salesforce.com/blogs/2022/01/drive-consistency-and-grow-developer-skills-with-a-developer-best-practices-checklist) for building secure apps that respect the limitations of the Platform.
 
-Some of the guidelines shared in this document where included from the repository [salesforce-recipes](https://github.com/rsoesemann/salesforce-recipes) by [rsoesemann](https://github.com/rsoesemann).
+Some of the guidelines shared in this document were included from the repository [salesforce-recipes](https://github.com/rsoesemann/salesforce-recipes) by [rsoesemann](https://github.com/rsoesemann).
 
 ## Allowed customization approaches
 
