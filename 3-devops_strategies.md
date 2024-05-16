@@ -73,17 +73,16 @@ Good branch names are like the following:
 
 [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) + [smart commits](https://support.atlassian.com/jira-software-cloud/docs/process-issues-with-smart-commits/).
 
-Conventional commits are enforced for local commits with a git commit-msg hook. Smart commits should be developer responsibility.
+Conventional commits are enforced for local commits with a git commit-msg hook. 
+Smart commits are optional and should be developer responsibility.
 
-On PR title upon completion, the same convention should be applied to take advantage of automatic `CHANGELOG.md` generation and Jira Integration. It is developer responsibility to ensure that the PR title upon completion if following convention commits + smart commits conventions.
+On PR title upon completion, the same convention should be applied to take advantage of automatic `CHANGELOG.md` generation and Jira Integration. It is developer responsibility to ensure that the PR title upon completion is following convention commits (+ smart commits conventions).
 
 Examples:
 
 `feat: add account dashboard PROJECT-1234 #close #comment Fixed this today #time 2d 5h`
 
 `fix: solve styling issue PROJECT-5678 #close #comment Changed color #time 1d 2h 5m`
-
-![Change PR message](img/Change_PR_message.png)
 
 > Smart commit commands that you execute will appear duplicated under certain circumstances. Altering commit history creates "new" commits, which replace the "old" ones. If those "new" commits contain the same smart commit commands as before the history rewrite, then the same smart commits will be executed again and hence appear to have been duplicated. The commit history altering git commands include git push --force and git merge --squash.
 
