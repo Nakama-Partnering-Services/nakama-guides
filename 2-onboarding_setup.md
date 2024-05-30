@@ -70,7 +70,8 @@ Note: if you need to perform any changes locally in files such as .vscode/settin
 
 ## NPM
 
-- $ npm ci
+- $ npm install -g yarn
+- $ yarn
 
 Note: on Mac, if encountering issues where husky scripts are not executable, go to folder `.husky` and run:
 
