@@ -72,10 +72,11 @@ Note: if you need to perform any changes locally in files such as .vscode/settin
 - $ npm install -g yarn
 - $ yarn
 
-Note: on Mac, if encountering issues where husky scripts are not executable, go to folder `.husky` and run:
+Note: on Linux/UNIX, if encountering issues where husky scripts are not executable, go to folder `.husky` and run:
 
 - $ chmod +x commit-msg
 - $ chmod +x pre-commit
 - $ chmod +x pre-push
+- $ chmod +x ../scripts/shell/append_ticket_number_to_commit_message.sh
 
 Happy coding!
