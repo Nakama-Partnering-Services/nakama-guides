@@ -9,6 +9,7 @@
 
 ## Apex specific
 
+- When working on new SOQL(query) and particularly when you are targeting SObject which contains lots of records (above 100k), try this query on PRODUCTION to see how it is performing. Results, especially if the query is slow, has to be consulted with the team, possibly create Indexed fields or request Custom Indexing from SF. If fields used in query are not available yet (as they are new), try to find equivalent and/or raise this issue within the team.
 - Test classes omit private and sharing declaration, regular class public and you need a very good reason for making it global. Put a // Note: on top to explain why.
 - Aside from test classes, all classes should have a sharing declaration. Most of classes should usually have `with sharing` declaration except for classes such as selectors or other classes that are always delegated, who should have `inherited sharing` to operate under calling class sharing specification. If omitted or `without sharing`, you should write a // Note: on top to explain why.
 - As Apex IDEs don't do that for you (other than Java IDEs) structure your classes using `// Constructor` `// Public` `// Private` `// Inner` section comments.

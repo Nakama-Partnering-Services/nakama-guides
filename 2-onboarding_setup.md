@@ -20,15 +20,12 @@
     - XML
   - Git Graph
   - GitLens-Git supercharged
-  - Salesforce Package.xml Generator
-  - Tabnine
   - Trailing Spaces
   - XML Tools
   - Auto Close Tag
   - Auto Complete Tag
   - Auto Rename Tag
   - Codey Midnight (or your favourite VSCode theme)
-  - Peacock (to easily identify different projects open in separate VSCode windows)
   - Material Icon Theme
   - Error Lens
 
