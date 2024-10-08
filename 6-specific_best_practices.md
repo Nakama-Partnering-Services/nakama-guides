@@ -123,7 +123,8 @@ trigger Opportunities on Opportunity (
 
 ## LWC specific
 
-- Always try to avoid innecessary levels of indentation, for example, by leveraging early return statements for validations or using `if:true={}` directive directly in your tag rather than in `<template>`.
+- Always try to avoid innecessary levels of indentation, for example, by leveraging early return statements for validations or using `lwc:if={}` directive directly in your tag rather than in `<template>`.
+- Bind your template directives such as `lwc:if={}` to getters instead of simple variables, so that the values are automatically and dynamically calculated when they change.
 - When variables are only going to be used in the `.js` controller file, start them with underscore `_`, for example: `_accountId`.
 - You will not need `@track` annotation almost ever.
 - Try to move your functional methods to a `utils.js` file and you imports for SObjects, fields, and labels to a `schema.js` file in you lightning web components.

@@ -73,7 +73,7 @@ Good branch names are like the following:
 
 [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) + [smart commits](https://support.atlassian.com/jira-software-cloud/docs/process-issues-with-smart-commits/).
 
-Conventional commits are enforced for local commits with a git commit-msg hook. 
+Conventional commits are enforced for local commits with a git commit-msg hook.
 Smart commits are optional and should be developer responsibility.
 
 On PR title upon completion, the same convention should be applied to take advantage of automatic `CHANGELOG.md` generation and Jira Integration. It is developer responsibility to ensure that the PR title upon completion is following convention commits (+ smart commits conventions).
