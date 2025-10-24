@@ -61,17 +61,18 @@ The following list aims to outline some of the principles that must always be co
     "singleQuote": true, // Preferable when writing HTML is needed in a Javascript file
     "bracketSameLine": true, // Solves previous awful formatting of HTML files
     "endOfLine": "lf", // Default, as used by Unix based OS
-    "printWidth": 120, // We know, it is not aligned with commonly used guidelines in companies like google, where this value is 80, but we think it makes reading the code easier
+    "printWidth": 150, // We know, it is not aligned with commonly used guidelines in companies like google, where this value is 80, but we think it makes reading the code easier
     "tabWidth": 4, // We know again, it is not aligned with commonly used guidelines in companies like google, where this value is 2, but we think it makes reading the code easier
     "useTabs": true, // Once again, we know it is not aligned with commonly used guidelines in companies like google, where they use spaces, but we think tabs make our lives easier, as explained here
     "apexInsertFinalNewline": true, // Default. It is also enforced by prettier for non Apex files, since it has no option to change it. Unfortunately, Salesforce removes them when retrieving files, being unaligned with prettier, so for the time being we do not care about what Salesforce does, giving preference to prettier, and we hope that Salesforce changes this in the future in order to be aligned with prettier configurations
+    "plugins": ["prettier-plugin-apex", "@prettier/plugin-xml"], // Required for apex formatting
     "overrides": [
         {
             "files": "**/lwc/**/*.html",
             "options": { "parser": "lwc" }
         },
         {
-            "files": "*.{cmp,page,component}",
+			"files": "*.{app,auradoc,cmp,design,page,component}",
             "options": { "parser": "html" }
         }
     ]

@@ -8,26 +8,22 @@
 
 - Follow [these instructions](https://developer.salesforce.com/tools/vscode/en/getting-started/install) to install VSCode, Salesforce CLI, and OpenJDK 17.
 - Install sfdx lightning flow scanner plugin for flows validation on pre-commit git hook: `sf plugins install lightning-flow-scanner`.
-- Install sfdx scanner plugin for pmd local validation on pre-commit git hook: `sf plugins install @salesforce/sfdx-scanner@latest-beta`.
+- Install sfdx scanner plugin for pmd local validation on pre-commit git hook: `sf plugins install code-analyzer`.
 - Make sure sfdx scanner javaHome property is pointing property to your JAVA directory: under your home directory `C:\Users\<your_username>`, there should be a `.sfdx-scanner\Config.json` file. Towards the end of the file, there should be the "javaHome" property and the value pointing property to your JAVA directory.
 - Install node latest LTS version.
 - Install these extensions (recomended):
   - Salesforce Extension Pack, plus:
     - Apex Log Analyzer
-    - ESLint
-    - Apex PMD
     - Prettier
     - XML
   - Git Graph
   - GitLens-Git supercharged
   - Trailing Spaces
-  - XML Tools
   - Auto Close Tag
   - Auto Complete Tag
   - Auto Rename Tag
   - Codey Midnight (or your favourite VSCode theme)
   - Material Icon Theme
-  - Error Lens
 
 ## Git
 
